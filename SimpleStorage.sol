@@ -2,7 +2,6 @@
 pragma solidity ^0.8.18;
 contract SimpleStorage {
     //  Basic types in solidity: boolean ,uint, int, address, bytes
-
 bool hasFavouriteNumber = true;
 uint256 favouriteNumber = 88;
 string favouriteNumberInText = "Eigty-Eight";

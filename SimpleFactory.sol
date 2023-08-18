@@ -51,7 +51,7 @@ contract StorageFactory{
 SimpleStorage public simpleStorage; 
 
 function createSimplestorageContract()public{
-    simpleStorage =   SimpleStorage();
+    simpleStorage = new SimpleStorage();
 }
 
 }

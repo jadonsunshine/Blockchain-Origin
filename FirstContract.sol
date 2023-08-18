@@ -34,7 +34,8 @@ string public myName = "Jadon";
 //A string is actually an array of bytes in solidity
 
 Person public person = Person({age: 20 , name : "Jadon"});
- 
+//Here we talked about mapping which is the same as your basic understanding of mapping
+
 
 mapping(string => uint256)public age; 
  //dynamic array which means that a limit isn't specified yet

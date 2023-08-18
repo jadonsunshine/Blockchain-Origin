@@ -18,7 +18,7 @@ contract SimpleStorage {
     //Person public myFriend = Person( {age : 19, name : "Sarge");
     //We would still have the same result
     function store (uint256 _favouriteNumber) public {
-        myfavouriteNumber = _favouriteNumber;
+        myfavouriteNumber = _favouriteNumber; 
     
     }
 
@@ -48,8 +48,10 @@ contract SimpleStorage {
  
 contract StorageFactory{
 
+SimpleStorage public simpleStorage; 
+
 function createSimplestorageContract()public{
-    // 
+    simpleStorage =   SimpleStorage();
 }
 
 }

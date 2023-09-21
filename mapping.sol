@@ -3,12 +3,9 @@ pragma solidity ^0.8.17;
 
 contract SimpleStorage {
     uint256  myfavouriteNumber;
-    
-    uint256[] listOfFavouriteNumbers;
+ 
     //In solidity you can create a new data type using the struct keyword
-    function addFavouriteNumber(uint _favouriteNo)public{
-        myfavouriteNumber =_favouriteNo;
-    }
+  
     struct Person { 
         uint256 age; 
         string name;
@@ -35,10 +32,13 @@ contract SimpleStorage {
     Person public person = Person({age: 20 , name : "Jadon"});
     
 
-    mapping(string => uint256)public age; 
-    //dynamic array which means that a limit isn't specified yet
+  
+    
         Person[] public listOfPeople;
-    //Memory , storage and Calldata 
+        //here you use the mapping like a key where you map names yo a particular uint which in this case is the age 
+
+        mapping(string => uint256)  public age; 
+ 
         function addperson(string memory _name, uint256 _favouriteNumber) public {
         listOfPeople.push(Person(_favouriteNumber,_name));
         age[_name] = _favouriteNumber;
